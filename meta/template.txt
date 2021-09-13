@@ -1,0 +1,13 @@
+resesida, säljer resor.
+
+nav (flexbox): Start, Resmål, Kontakt
+
+Resmål (grid): Spanian, Tysklan, Italien
+
+Responsiv: Mobil, Tablet, Desktop
+
+Interaktivitet: betygsättning resmål, inloggning (ink char validiering)
+
+fetch: resmål fakta
+
+Spara : dark/light mode
