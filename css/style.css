@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Allison&family=Roboto:wght@400;700&display=swap');
 
+/* Phone */
 body {
     background-color: #eeeeee;
     margin: 0;
@@ -34,10 +35,14 @@ section {
     margin: 0px 10px 10px;
 }
 
-#navContainer {
-    clear: both;
-    background-color: darkorchid;
+#navContainerPc {
+    display: none;
 }
+
+#navContainerPhone {
+    clear: both;
+}
+
 
 nav {
     background-color: #e1e1e1;
@@ -57,18 +62,18 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #303030;
+    background-color: #9d1212;
 }
 
 #carouselContainer {
     margin-top: 10px;
 }
 
-#carouselFrame{
+#carouselFrame {
     max-width: 100%;
 }
 
-.mySlides{
+.mySlides {
     width: 100%;
 }
 
@@ -84,10 +89,6 @@ nav a:hover {
     background-color: white;
 }
 
-.gridTextField{
-    padding-bottom: 10px;
-}
-
 #carouselTextField h1, .gridTextField h1 {
     margin-top: 0;
 }
@@ -96,39 +97,43 @@ nav a:hover {
     padding-bottom: 10px;
 }
 
-#gridContainer{
+#gridContainer {
     margin-top: -5px;
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.gridImg{
+#gridItem {
+    margin-bottom: 10px;
+}
+
+.gridImg {
     width: 100%;
     border-radius: 5px 5px 0 0;
 }
 
-#gridItem{
-    margin-bottom: 10px;
+.gridTextField {
+    padding-bottom: 10px;
 }
 
-.boldLink{
+.boldLink {
     font-weight: bold;
     color: black;
 }
 
-footer{
+footer {
     background-color: gray;
 }
 
-#footerLinks{
+#footerLinks {
     font-family: 'Roboto', sans-serif;
     float: left;
-list-style: none;
+    list-style: none;
     padding: 0;
     margin-left: 20px;
 }
 
-#footerSocialMedia{
+#footerSocialMedia {
     font-family: 'Roboto', sans-serif;
     text-align: right;
     list-style: none;
@@ -136,8 +141,12 @@ list-style: none;
     margin-right: 20px;
 }
 
-#footerSocialMedia p{
+#footerSocialMedia p {
     margin: 0;
+}
+
+#footerSocialMediaPc{
+    display: none;
 }
 
 .newsletter {
@@ -147,7 +156,7 @@ list-style: none;
     text-align: center;
 }
 
-#inputEmail, #submitEmail{
+#inputEmail, #submitEmail {
     height: 35px;
     border-radius: 5px;
     margin-bottom: 5px;
@@ -155,14 +164,226 @@ list-style: none;
 
 }
 
-#paymentOptions{
+#paymentOptions {
     text-align: center;
 }
 
-#paymentOptions img{
+#paymentOptions img {
     height: 30px;
     margin-left: 5px;
     margin-right: 5px;
 }
 
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        background-color: #c41919;
+        padding: 15px;
+    }
 
+    #centerPcHeaderContainer{
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    #headerContainer {
+        float: none;
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: 300px;
+    }
+
+    header p {
+        font-family: 'Roboto', sans-serif;
+        text-shadow: 2px 2px #000000;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        float: right;
+    }
+
+    #navContainerPhone {
+        display: none;
+    }
+
+    #navContainerPc {
+        float: right;
+        display: block;
+        clear: none;
+        margin-top: -80px;
+    }
+
+    nav {
+        background-color: #c41919;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        width: 400px;
+    }
+
+    nav a {
+        font-size: 40px;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+
+    }
+
+    section {
+        clear: both;
+    }
+
+    footer ul {
+        text-align: center;
+    }
+
+    footer ul li{
+        display: inline;
+        margin: 0 5px 0 5px;
+
+    }
+    #footerLinks {
+        float: none;
+        padding: 5px;
+        margin-left: 0;
+    }
+
+    #footerSocialMedia {
+        display: none;
+    }
+
+    #footerSocialMediaPc {
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        list-style: none;
+        float: none;
+        margin: 0 10px 0 10px;
+    }
+
+    #paymentOptions img {
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+}
+
+/*	Desktop	*/
+@media screen and (min-width: 1025px) {
+    header {
+        background-color: #c41919;
+        padding: 15px;
+    }
+
+    #centerPcHeaderContainer{
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    #headerContainer {
+        float: none;
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        max-width: 300px;
+    }
+
+    header p {
+        font-family: 'Roboto', sans-serif;
+        text-shadow: 2px 2px #000000;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        float: right;
+    }
+
+    #navContainerPhone {
+        display: none;
+    }
+
+    #navContainerPc {
+        float: right;
+        display: block;
+        clear: none;
+        margin-top: -80px;
+    }
+
+    nav {
+        background-color: #c41919;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        width: 600px;
+    }
+
+    nav a {
+        font-size: 40px;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+
+    }
+
+    section {
+        clear: both;
+    }
+
+    #gridContainer {
+        margin-top: -5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    #gridItem {
+        margin-bottom: 10px;
+    }
+
+    .gridImg {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .gridTextField {
+        padding-bottom: 10px;
+    }
+
+    footer ul {
+        text-align: center;
+    }
+
+    footer ul li{
+        display: inline;
+        margin: 0 5px 0 5px;
+
+    }
+    #footerLinks {
+        float: none;
+        padding: 5px;
+        margin-left: 0;
+    }
+
+    #footerSocialMedia {
+        display: none;
+    }
+
+    #footerSocialMediaPc {
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        list-style: none;
+        float: none;
+        margin: 0 10px 0 10px;
+    }
+
+    #paymentOptions img {
+        height: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+}
