@@ -227,7 +227,7 @@ footer {
         padding: 5px;
         text-align: center;
         text-decoration: none;
-        color: #000000;
+        color: white;
 
     }
 
@@ -275,7 +275,7 @@ footer {
 @media screen and (min-width: 1025px) {
     header {
         background-color: #c41919;
-        padding: 15px;
+        padding: 5px;
     }
 
     #centerPcHeaderContainer{
@@ -289,7 +289,14 @@ footer {
         padding-top: 0;
         padding-bottom: 0;
         max-width: 300px;
+
     }
+
+    #headerContainer img {
+        height: 75px
+    }
+
+
 
     header p {
         font-family: 'Roboto', sans-serif;
@@ -298,6 +305,7 @@ footer {
         font-size: 35px;
         font-weight: bold;
         float: right;
+        margin-top: 23px;
     }
 
     #navContainerPhone {
@@ -320,16 +328,17 @@ footer {
     }
 
     nav a {
-        font-size: 40px;
+        font-size: 35px;
         padding: 5px;
         text-align: center;
         text-decoration: none;
-        color: #000000;
+        color: white;
 
     }
 
     section {
         clear: both;
+
     }
 
     #gridContainer {
