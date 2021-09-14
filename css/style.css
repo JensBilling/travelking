@@ -437,6 +437,7 @@ footer {
     /* Desktop destination specific*/
     #destinationGridContainer {
         grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: -10px;
         gap: 10px;
     }
 
