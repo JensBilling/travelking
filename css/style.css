@@ -174,7 +174,7 @@ footer {
     margin-right: 5px;
 }
 
-/* Phone destination specific*/
+/* Phone destination*/
 
 #destinationGridContainer {
     margin-top: 10px;
@@ -208,6 +208,11 @@ footer {
 
 #removeMarginBottom{
     margin-bottom: 0;
+}
+
+/* Desktop destination specific*/
+#specificDestinationGridContainer{
+    margin-top: 10px;
 }
 
 /* Tablet */
@@ -306,7 +311,7 @@ footer {
         margin-right: 5px;
     }
 
-    /* Tablet destination specific*/
+    /* Tablet destination */
     #destinationGridContainer {
         grid-template-columns: 1fr 1fr;
         gap: 10px;
@@ -434,11 +439,16 @@ footer {
         margin-right: 5px;
     }
 
-    /* Desktop destination specific*/
+    /* Desktop destination */
     #destinationGridContainer {
         grid-template-columns: 1fr 1fr 1fr;
         margin-bottom: -10px;
         gap: 10px;
+    }
+
+    /* Desktop destination specific*/
+    #specificDestinationGridContainer{
+        margin-top: 10px;
     }
 
 }
