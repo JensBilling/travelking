@@ -3,17 +3,6 @@ let link = document.createElement("link");
 
 let darkMode = false;
 
-if (storedMode != 'default'){
-    link.rel = "stylesheet";
-    link.typetype = "text/css";
-    link.href="css/darkMode.css";
-
-    document.getElementsByTagName("head")[0].appendChild(link);
-    darkMode = true;
-    storedMode = 'dark';
-    themeChoice();
-}
-
 function changeTheme() {
 
     if (!darkMode){
@@ -39,5 +28,16 @@ function changeTheme() {
 
     function themeChoice(){
         localStorage.setItem('mode', storedMode);
+    }
+
+    if (storedMode != 'default'){
+        link.rel = "stylesheet";
+        link.typetype = "text/css";
+        link.href="css/darkMode.css";
+
+        document.getElementsByTagName("head")[0].appendChild(link);
+        darkMode = true;
+        storedMode = 'dark';
+        themeChoice();
     }
 }
