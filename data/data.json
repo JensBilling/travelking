@@ -1,0 +1,22 @@
+{
+  "destinations": [
+    {
+      "destinationName": "Barcelona",
+      "destinationCountry": "Spanien",
+      "destinationTemperature": "29°C",
+      "destinationWeather": "soligt"
+    },
+    {
+      "destinationName": "Paris",
+      "destinationCountry": "Frankrike",
+      "destinationTemperature": "22°C",
+      "destinationWeather": "Molnigt"
+    },
+    {
+      "destinationName": "Rom",
+      "destinationCountry": "Italien",
+      "destinationTemperature": "28°C",
+      "destinationWeather": "soligt"
+    }
+  ]
+}
