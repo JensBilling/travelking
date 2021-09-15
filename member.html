@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Travel King - Barcelona</title>
+    <title>TravelKing.se</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,7 +20,7 @@
                 <a href="index.html">Start</a>
                 <a href="resmal.html">Resmål</a>
                 <a href="kontakt.html">Kontakt</a>
-                <a href="member.html">Medlem</a>
+                <a href="member.html">Logga in</a>
             </nav>
         </article>
     </div>
@@ -36,30 +36,26 @@
                 <a href="member.html">Logga in</a>
             </nav>
         </article>
-        <article id="specificDestinationGridContainer">
-            <div class="destinationGridItem">
-                <a href="barcelona.html">
-                    <img src="img/barcelona1200x600.jpg">
-                </a>
-                <div class="destinationGridTextField">
-                    <h1>Barcelona placeholer</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet sollicitudin sem at
-                        faucibus. Curabitur eget felis ut ipsum maximus molestie. Nulla facilisi. Integer quis ligula
-                        iaculis, facilisis sem vel, efficitur urna. Donec posuere sapien felis, et sodales diam mollis
-                        quis. Integer malesuada ipsum id libero laoreet, ut lobortis ante feugiat.</p>
-                    <a href="barcelona.html" class="boldLink">Läs mer här!</a>
-                </div>
-            </div>
-            <div class="destinationGridItem">
-                <div class="destinationGridTextField">
-                    <h1>Info:</h1>
-                    <p id="destinationInfoOutput"></p>
-                </div>
-            </div>
-        </article>
-    </div>
-</section>
 
+        <article class="sign-in">
+            <form class="sign-in-form" id="signInForm">
+                <input type="text" placeholder="Användarnamn" required="required" id="userName" name="userName">
+                <input type="password" placeholder="Lösenord" required="required" id="password" name="password">
+                <input type="submit" value="Sign in" id="signInButton">
+                <p id="signInOutput">Ange inloggningsuppgifter ovan för att logga in.</p>
+            </form>
+
+            <form class="sign-in-form" id="signUpForm">
+                <input type="text" placeholder="Användarnamn" required="required" id="newUserName" name="newUserName">
+                <input type="password" placeholder="Lösenord" required="required" id="newPassword" name="newPassword">
+                <input type="submit" value="Sign up" id="signUpButton">
+                <p id="signUpOutput">Registrera en ny användare ovan.</p>
+            </form>
+        </article>
+
+    </div>
+
+</section>
 
 <footer>
     <ul id="footerLinks">
@@ -98,7 +94,8 @@
     </div>
 </footer>
 
-<script src="js/destination.js"></script>
+<script src="js/member.js"></script>
+
 
 </body>
 </html>

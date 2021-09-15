@@ -147,6 +147,7 @@ footer {
 
 #footerSocialMediaPc {
     display: none;
+    padding: 0;
 }
 
 .newsletter {
@@ -210,7 +211,7 @@ footer {
     margin-bottom: 0;
 }
 
-/* Desktop destination specific*/
+/* destination specific*/
 #specificDestinationGridContainer{
     margin-top: 10px;
 }
@@ -218,6 +219,27 @@ footer {
 #destinationInfoOutput{
     margin-bottom: 0;
     padding-bottom: 0;
+}
+
+/* sign in */
+.sign-in{
+    text-align: center;
+}
+
+.sign-in-form{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    padding: 10px 5px 1px 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#userName, #password, #signInButton, #newUserName, #newPassword, #signUpButton{
+    height: 35px;
+    width: 60%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: #e1e1e1;
 }
 
 /* Tablet */
@@ -257,23 +279,24 @@ footer {
         float: right;
         display: block;
         clear: none;
-        margin-top: -80px;
+        margin-top: -90px;
     }
 
     nav {
         background-color: #c41919;
         display: flex;
         flex-direction: row;
-        margin: 0;
-        width: 400px;
+        margin: 0 5px 0 0;
+        width: 410px;
     }
 
     nav a {
-        font-size: 40px;
-        padding: 5px;
+        font-size: 25px;
+        padding: 0px;
         text-align: center;
         text-decoration: none;
         color: white;
+        padding: 20px 0 20px 0;
 
     }
 
@@ -451,9 +474,14 @@ footer {
         gap: 10px;
     }
 
-    /* Desktop destination specific*/
-    #specificDestinationGridContainer{
-        margin-top: 10px;
+    /* sign in */
+
+    #userName, #password, #signInButton, #newUserName, #newPassword, #signUpButton{
+        height: 35px;
+        width: 30%;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        background-color: #e1e1e1;
     }
 
 }
