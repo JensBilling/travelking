@@ -154,6 +154,14 @@ footer {
     padding: 0;
 }
 
+.lightSocialMediaTheme{
+    display: inline;
+}
+
+.darkSocialMediaTheme{
+    display: none;
+}
+
 .newsletter {
     font-family: 'Allison', cursive;
     font-size: 35px;
@@ -177,6 +185,14 @@ footer {
     height: 30px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.lightPaymentTheme{
+    display: inline;
+}
+
+.darkPaymentTheme{
+    display: none;
 }
 
 /* Phone destination*/
