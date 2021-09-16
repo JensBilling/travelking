@@ -1,3 +1,4 @@
+//Dark mode local storage
 let storedMode = localStorage.getItem('mode');
 let link = document.createElement("link");
 
@@ -40,3 +41,15 @@ function changeTheme() {
         localStorage.setItem('mode', storedMode);
     }
 }
+
+// Newsletter email alert
+let newsletterForm = document.querySelector('#newsletter');
+
+function addEmailToNewsletter(event) {
+    let emailAddress = document.querySelector('#inputEmail').value;
+    alert(emailAddress + " added to newsletter!");
+
+    event.preventDefault();
+}
+
+newsletterForm.addEventListener('submit', addEmailToNewsletter, false);
