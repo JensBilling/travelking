@@ -32,7 +32,7 @@ section {
 }
 
 #sectionMargin {
-    margin: 0px 10px 10px;
+    margin: 0 10px 10px;
 }
 
 #navContainerPc {
@@ -145,8 +145,8 @@ footer {
     margin-right: 20px;
 }
 
-#footerSocialMedia p {
-    margin: 0;
+#footerSocialMedia a {
+    color: #052F5F;
 }
 
 #footerSocialMediaPc {
@@ -262,6 +262,16 @@ footer {
     background-color: #e1e1e1;
 }
 
+/* Placeholder html */
+#placeholderContainer{
+    background-color: white;
+}
+
+.placeholderH1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     header {
@@ -312,7 +322,6 @@ footer {
 
     nav a {
         font-size: 25px;
-        padding: 0px;
         text-align: center;
         text-decoration: none;
         color: white;

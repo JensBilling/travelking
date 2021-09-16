@@ -32,7 +32,7 @@ section {
 }
 
 #sectionMargin {
-    margin: 0px 10px 10px;
+    margin: 0 10px 10px;
 }
 
 #navContainerPc {
@@ -147,9 +147,12 @@ footer {
     margin-right: 20px;
 }
 
-#footerSocialMedia p {
-    margin: 0;
+#footerSocialMedia li {
     color: #e6e7ec;
+}
+
+#footerSocialMedia a {
+    color: #247ba0;
 }
 
 #footerSocialMediaPc {
@@ -157,11 +160,11 @@ footer {
     padding: 0;
 }
 
-.lightSocialMediaTheme{
+.lightSocialMediaTheme {
     display: none;
 }
 
-.darkSocialMediaTheme{
+.darkSocialMediaTheme {
     display: inline;
 }
 
@@ -179,7 +182,7 @@ footer {
     background-color: #e6e7ec;
 }
 
-.newsletter label{
+.newsletter label {
     color: #e6e7ec;
 }
 
@@ -193,11 +196,11 @@ footer {
     margin-right: 5px;
 }
 
-.lightPaymentTheme{
+.lightPaymentTheme {
     display: none;
 }
 
-.darkPaymentTheme{
+.darkPaymentTheme {
     display: inline;
 }
 
@@ -234,26 +237,26 @@ footer {
     padding-bottom: 10px;
 }
 
-#removeMarginBottom{
+#removeMarginBottom {
     margin-bottom: 0;
 }
 
 /* destination specific*/
-#specificDestinationGridContainer{
+#specificDestinationGridContainer {
     margin-top: 10px;
 }
 
-#destinationInfoOutput{
+#destinationInfoOutput {
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
 /* sign in */
-.sign-in{
+.sign-in {
     text-align: center;
 }
 
-.sign-in-form{
+.sign-in-form {
     font-family: 'Roboto', sans-serif;
     background-color: #333436;
     padding: 10px 5px 1px 5px;
@@ -262,12 +265,23 @@ footer {
     color: #e6e7ec;
 }
 
-#userName, #password, #signInButton, #newUserName, #newPassword, #signUpButton{
+#userName, #password, #signInButton, #newUserName, #newPassword, #signUpButton {
     height: 35px;
     width: 60%;
     border-radius: 5px;
     margin-bottom: 5px;
     background-color: #e1e1e1;
+}
+
+/* Placeholder html */
+#placeholderContainer{
+    background-color: #333434;
+}
+
+.placeholderH1{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #e6e7ec;
 }
 
 /* Tablet */
@@ -319,7 +333,6 @@ footer {
 
     nav a {
         font-size: 25px;
-        padding: 0px;
         text-align: center;
         text-decoration: none;
         color: #e6e7ec;
@@ -431,7 +444,7 @@ footer {
         padding: 5px;
         text-align: center;
         text-decoration: none;
-        ccolor: #e6e7ec;
+        color: #e6e7ec;
     }
 
     section {
@@ -501,8 +514,7 @@ footer {
     }
 
     /* sign in */
-
-    #userName, #password, #signInButton, #newUserName, #newPassword, #signUpButton{
+    #userName, #password, #signInButton, #newUserName, #newPassword, #signUpButton {
         height: 35px;
         width: 30%;
         border-radius: 5px;
